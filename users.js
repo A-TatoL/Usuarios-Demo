@@ -113,7 +113,7 @@ const usuarios = [
 
 // Ruta GET que expone el endpoint '/customers'
 app.get('/customers', (req, res) => {
-  res.json(customersData);
+  res.json(usuarios);
 });
 
 // Iniciar el servidor
