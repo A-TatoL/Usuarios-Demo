@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Datos simulados
 const usuarios = [
   {
     "id_usuario": "ID-4821",
@@ -111,12 +110,19 @@ const usuarios = [
   }
 ];
 
-// Ruta GET que expone el endpoint '/customers'
 app.get('/customers', (req, res) => {
+  const { id_usuario } = req.query;
+
+  // Si envían un id_usuario en los query params, filtramos el arreglo
+  if (id_usuario) {
+    const resultado = usuarios.filter(u => u.id_usuario === id_usuario);
+    return res.json(resultado);
+  }
+
+  // Si no envían parámetros, devolvemos la lista completa envuelta en un objeto o plana según prefieras (aquí devolvemos el arreglo directo para que coincida con tu referencia de imagen)
   res.json(usuarios);
 });
 
-// Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
