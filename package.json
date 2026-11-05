@@ -1,0 +1,12 @@
+{
+  "name": "usuarios-demo",
+  "version": "1.0.0",
+  "description": "API de usuarios con Express",
+  "main": "users.js",
+  "scripts": {
+    "start": "node users.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
