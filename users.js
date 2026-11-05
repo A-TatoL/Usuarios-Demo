@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Datos simulados
 const usuarios = [
   {
     "id_usuario": "ID-4821",
@@ -110,15 +111,12 @@ const usuarios = [
   }
 ];
 
-// Envolvemos el arreglo dentro de un objeto JSON con una propiedad raíz
+// Ruta GET que expone el endpoint '/customers'
 app.get('/customers', (req, res) => {
-  res.json({
-    success: true,
-    total: usuarios.length,
-    data: usuarios
-  });
+  res.json(usuarios);
 });
 
+// Iniciar el servidor
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
