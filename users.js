@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 
 const usuarios = [
   {
-    "id_usuario": "ID-4821",
+    "id_usuario": "V-15482103",
     "nombre": "Carlos Mendoza",
     "saldo_cuenta": 100,
     "estado_deuda": "Al día",
@@ -12,7 +12,7 @@ const usuarios = [
     "fecha_cobro": null
   },
   {
-    "id_usuario": "ID-9314",
+    "id_usuario": "V-18931412",
     "nombre": "María Fernanda Torres",
     "saldo_cuenta": 0,
     "estado_deuda": "Vencido",
@@ -20,7 +20,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-15"
   },
   {
-    "id_usuario": "ID-1058",
+    "id_usuario": "V-11105890",
     "nombre": "Jorge Luis Andrade",
     "saldo_cuenta": 50,
     "estado_deuda": "Pendiente",
@@ -28,7 +28,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-10"
   },
   {
-    "id_usuario": "ID-7462",
+    "id_usuario": "V-14746231",
     "nombre": "Ana Gabriela Paz",
     "saldo_cuenta": 0,
     "estado_deuda": "Vencido",
@@ -36,7 +36,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-08"
   },
   {
-    "id_usuario": "ID-2390",
+    "id_usuario": "V-20239045",
     "nombre": "Roberto Cedeño",
     "saldo_cuenta": 439.20,
     "estado_deuda": "Al día",
@@ -44,7 +44,7 @@ const usuarios = [
     "fecha_cobro": null
   },
   {
-    "id_usuario": "ID-6543",
+    "id_usuario": "V-17654328",
     "nombre": "Diana Carolina Vera",
     "saldo_cuenta": 200,
     "estado_deuda": "Pendiente",
@@ -52,16 +52,15 @@ const usuarios = [
     "fecha_cobro": "2026-11-20"
   },
   {
-    "id_usuario": "ID-3187",
+    "id_usuario": "V-13318764",
     "nombre": "Luis Fernando Garcés",
-    "saldo_cuenta": 1045.20,
+    "saldo_cuenta": 1,
     "estado_deuda": "Vencido",
     "deudas_pendientes": 1250.75,
-    "saldo_cuenta": 1,
     "fecha_cobro": "2026-11-12"
   },
   {
-    "id_usuario": "ID-8920",
+    "id_usuario": "V-16892011",
     "nombre": "Patricia Benítez",
     "saldo_cuenta": 2500,
     "estado_deuda": "Al día",
@@ -69,7 +68,7 @@ const usuarios = [
     "fecha_cobro": null
   },
   {
-    "id_usuario": "ID-5019",
+    "id_usuario": "V-12501988",
     "nombre": "Esteban Jaramillo",
     "saldo_cuenta": 0,
     "estado_deuda": "Pendiente",
@@ -77,7 +76,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-25"
   },
   {
-    "id_usuario": "ID-1946",
+    "id_usuario": "V-19194633",
     "nombre": "Valeria Montero",
     "saldo_cuenta": 0,
     "estado_deuda": "Vencido",
@@ -85,7 +84,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-09"
   },
   {
-    "id_usuario": "ID-7832",
+    "id_usuario": "V-15783204",
     "nombre": "Gabriel Zambrano",
     "saldo_cuenta": 139.45,
     "estado_deuda": "Pendiente",
@@ -93,7 +92,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-18"
   },
   {
-    "id_usuario": "ID-4215",
+    "id_usuario": "V-18421590",
     "nombre": "Sofía Marcela Narváez",
     "saldo_cuenta": 769.39,
     "estado_deuda": "Al día",
@@ -101,7 +100,7 @@ const usuarios = [
     "fecha_cobro": null
   },
   {
-    "id_usuario": "ID-6091",
+    "id_usuario": "V-21609122",
     "nombre": "Andrés Felipe Macías",
     "saldo_cuenta": 120.34,
     "estado_deuda": "Vencido",
@@ -109,7 +108,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-14"
   },
   {
-    "id_usuario": "ID-2784",
+    "id_usuario": "V-14278455",
     "nombre": "Lorena Salazar",
     "saldo_cuenta": 0,
     "estado_deuda": "Pendiente",
@@ -117,7 +116,7 @@ const usuarios = [
     "fecha_cobro": "2026-11-22"
   },
   {
-    "id_usuario": "ID-9153",
+    "id_usuario": "V-17915302",
     "nombre": "Mateo Alejandro Hidalgo",
     "saldo_cuenta": 456.89,
     "estado_deuda": "Vencido",
@@ -135,7 +134,7 @@ app.get('/customers', (req, res) => {
     return res.json(resultado);
   }
 
-  // Si no envían parámetros, devolvemos la lista completa envuelta en un objeto o plana según prefieras (aquí devolvemos el arreglo directo para que coincida con tu referencia de imagen)
+  // Si no envían parámetros, devolvemos la lista completa
   res.json(usuarios);
 });
 
